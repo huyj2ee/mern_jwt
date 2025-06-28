@@ -1,0 +1,151 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="JWT" version="4">
+  <OBJECT>
+    <ID name="JWT" mc="Standard.Package" uid="fd51e446-b89a-402e-860e-9138223bf97d"/>
+    <PID name="Detail View" mc="Standard.Package" uid="ac18f48a-4a82-4ba1-9db2-45dc845b170c"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[JWT]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedInformationFlow">
+        <OBJECT>
+          <ID name="view" mc="Standard.InformationFlow" uid="ef5eaed2-e0cc-4e34-85ca-d1b875b3ab2e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[view]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Browser" mc="Standard.Actor" uid="45d5a4a8-54dc-438e-aae2-ffbc5242d8e1"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Index" mc="Standard.Class" uid="45dbbc91-8eb2-4a34-b424-ea0e35039e01"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="api call" mc="Standard.InformationFlow" uid="5260bdc1-38fd-43ca-86bf-4528d7891338"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[api call]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="UserSlice" mc="Standard.Class" uid="4ef1be98-d1a1-47e0-9d16-d72d766b9c61"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Express" mc="Standard.Class" uid="6f1a9f76-90e6-4434-b45c-c424d7586c59"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="api call" mc="Standard.InformationFlow" uid="4508c58e-1b5d-4caf-bbbb-12ba3c4db79f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[api call]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="UsersSlice" mc="Standard.Class" uid="fb331a4e-358e-4afe-91eb-d2421369973f"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Express" mc="Standard.Class" uid="6f1a9f76-90e6-4434-b45c-c424d7586c59"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="api call" mc="Standard.InformationFlow" uid="dd605cfd-1cd5-4c85-8862-1887dd501b39"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[api call]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="RoleSlice" mc="Standard.Class" uid="8b7f69f3-b6be-47f5-96ed-ee25c9c5158e"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Express" mc="Standard.Class" uid="6f1a9f76-90e6-4434-b45c-c424d7586c59"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="method invoke" mc="Standard.InformationFlow" uid="11f73b16-6b06-4ba4-bf1a-e5fc3412b9d9"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[method invoke]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Express" mc="Standard.Class" uid="6f1a9f76-90e6-4434-b45c-c424d7586c59"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="JwtController" mc="Standard.Class" uid="a7c9e0e5-2aad-49dd-bbdc-6782c7996667"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="method invoke" mc="Standard.InformationFlow" uid="72ec1e1e-1a34-49f4-b8e2-c647ab49be2f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[method invoke]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Express" mc="Standard.Class" uid="6f1a9f76-90e6-4434-b45c-c424d7586c59"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="UserController" mc="Standard.Class" uid="2600a2b7-fcde-4c56-b64d-bbbf75a15c88"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="method invoke" mc="Standard.InformationFlow" uid="ea0634e9-859f-45a2-b420-e0cd9f9b1693"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[method invoke]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Express" mc="Standard.Class" uid="6f1a9f76-90e6-4434-b45c-c424d7586c59"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="RoleController" mc="Standard.Class" uid="4ddee812-04ed-4597-8d9c-9f466451d9ee"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="http request" mc="Standard.InformationFlow" uid="afab136f-969a-4540-a5c3-8b7778850c2c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[http request]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Postman" mc="Standard.Actor" uid="1c1edebb-dd5c-4507-b877-9a70f254fe8d"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Express" mc="Standard.Class" uid="6f1a9f76-90e6-4434-b45c-c424d7586c59"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Backend" mc="Standard.Package" uid="11d48e29-44d0-4648-b63f-68b0165548e4"/>
+        <COMPID name="Frontend" mc="Standard.Package" uid="0d3fbb3e-8953-49bc-9105-af5cb22d8774"/>
+        <COMPID name="Browser" mc="Standard.Actor" uid="45d5a4a8-54dc-438e-aae2-ffbc5242d8e1"/>
+        <COMPID name="Postman" mc="Standard.Actor" uid="1c1edebb-dd5c-4507-b877-9a70f254fe8d"/>
+        <COMPID name="Framework" mc="Standard.Package" uid="c11e3a71-37de-45c8-a738-a9cc5f4853c7"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="System overview class diagram" mc="Standard.ClassDiagram" uid="5eeaa07f-53fa-47c0-82c5-4cecb9521520"/>
+        <COMPID name="Architectural class diagram" mc="Standard.ClassDiagram" uid="82933590-c28a-47bf-90bb-454279474cf3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

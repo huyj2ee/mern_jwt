@@ -1,0 +1,234 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Backend" version="4">
+  <OBJECT>
+    <ID name="Backend" mc="Standard.Package" uid="11d48e29-44d0-4648-b63f-68b0165548e4"/>
+    <PID name="JWT" mc="Standard.Package" uid="fd51e446-b89a-402e-860e-9138223bf97d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Backend]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedInformationFlow">
+        <OBJECT>
+          <ID name="manipulate" mc="Standard.InformationFlow" uid="4ef93256-e00e-40c3-b664-9cca869e50c1"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[manipulate]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="manipulate" mc="Standard.InformationFlow" uid="f51d6e5a-e770-4728-82be-a15356997dcc"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[manipulate]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationTarget">
+              <ID name="IUser" mc="Standard.Class" uid="fd1c7e31-4c68-46c2-9c3d-e4c33292671d"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="manipulate" mc="Standard.InformationFlow" uid="3622e47c-dc41-4d0c-86da-855ddd757bb9"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[manipulate]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationTarget">
+              <ID name="IRole" mc="Standard.Class" uid="76eec3d8-63bf-4bd0-bc3e-7674c567cfad"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="access" mc="Standard.InformationFlow" uid="33d34628-757d-46a3-9e97-5ed7f71a8197"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[access]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="JwtController" mc="Standard.Class" uid="a7c9e0e5-2aad-49dd-bbdc-6782c7996667"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="JwtTokenService" mc="Standard.Class" uid="beb5c59b-e455-4494-a38e-a9a3c020402a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="access" mc="Standard.InformationFlow" uid="f3bed985-82ad-4e68-9d73-6daee5a70336"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[access]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="JwtController" mc="Standard.Class" uid="a7c9e0e5-2aad-49dd-bbdc-6782c7996667"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="RefreshTokenService" mc="Standard.Class" uid="a6ecf82f-600e-49de-8eef-4cdf2f3437be"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="access" mc="Standard.InformationFlow" uid="e4c0fa32-f418-41dd-906f-5681ca5af6cf"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[access]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="JwtController" mc="Standard.Class" uid="a7c9e0e5-2aad-49dd-bbdc-6782c7996667"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="User" mc="Standard.Class" uid="6b8bef10-68d9-43b7-a4c5-3384813fd85b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="access" mc="Standard.InformationFlow" uid="b0516107-bd43-4a99-a8fe-7ae902b45ff9"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[access]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="JwtController" mc="Standard.Class" uid="a7c9e0e5-2aad-49dd-bbdc-6782c7996667"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="RefreshToken" mc="Standard.Class" uid="3422b23c-5076-4b06-9554-8176204fedfd"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="access" mc="Standard.InformationFlow" uid="227f58f8-73a2-4996-a4f6-53eb3b396dec"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[access]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="UserController" mc="Standard.Class" uid="2600a2b7-fcde-4c56-b64d-bbbf75a15c88"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="RefreshToken" mc="Standard.Class" uid="3422b23c-5076-4b06-9554-8176204fedfd"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="access" mc="Standard.InformationFlow" uid="06ad851e-805b-423c-b0f2-98c90a3c2764"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[access]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="UserController" mc="Standard.Class" uid="2600a2b7-fcde-4c56-b64d-bbbf75a15c88"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="User" mc="Standard.Class" uid="6b8bef10-68d9-43b7-a4c5-3384813fd85b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="access" mc="Standard.InformationFlow" uid="69db3481-8368-4e8f-b9b0-1f1c1794fbe2"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[access]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="RoleController" mc="Standard.Class" uid="4ddee812-04ed-4597-8d9c-9f466451d9ee"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Role" mc="Standard.Class" uid="bf3dc78a-3a22-4e67-8459-e7a0345d8c94"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="access" mc="Standard.InformationFlow" uid="c5a6af19-fdbf-4bf6-be31-e1d308e9c408"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[access]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="RoleController" mc="Standard.Class" uid="4ddee812-04ed-4597-8d9c-9f466451d9ee"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="User" mc="Standard.Class" uid="6b8bef10-68d9-43b7-a4c5-3384813fd85b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="manipulate" mc="Standard.InformationFlow" uid="e57dc193-f647-4455-b579-a7060749a55f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[manipulate]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="RefreshToken" mc="Standard.Class" uid="3422b23c-5076-4b06-9554-8176204fedfd"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="IRefreshToken" mc="Standard.Class" uid="50ffb098-eb8e-4f80-999f-1dee2c0e5e39"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="manipulate" mc="Standard.InformationFlow" uid="50d2f619-cc0a-4463-8aae-e6e148197ce3"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[manipulate]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Role" mc="Standard.Class" uid="bf3dc78a-3a22-4e67-8459-e7a0345d8c94"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="IRole" mc="Standard.Class" uid="76eec3d8-63bf-4bd0-bc3e-7674c567cfad"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="manipulate" mc="Standard.InformationFlow" uid="1305ff66-2821-4cb7-8b49-2af9178af4cc"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[manipulate]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="User" mc="Standard.Class" uid="6b8bef10-68d9-43b7-a4c5-3384813fd85b"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="IUser" mc="Standard.Class" uid="fd1c7e31-4c68-46c2-9c3d-e4c33292671d"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="JwtController" mc="Standard.Class" uid="a7c9e0e5-2aad-49dd-bbdc-6782c7996667"/>
+        <COMPID name="UserController" mc="Standard.Class" uid="2600a2b7-fcde-4c56-b64d-bbbf75a15c88"/>
+        <COMPID name="RoleController" mc="Standard.Class" uid="4ddee812-04ed-4597-8d9c-9f466451d9ee"/>
+        <COMPID name="IUser" mc="Standard.Class" uid="fd1c7e31-4c68-46c2-9c3d-e4c33292671d"/>
+        <COMPID name="IRole" mc="Standard.Class" uid="76eec3d8-63bf-4bd0-bc3e-7674c567cfad"/>
+        <COMPID name="IRefreshToken" mc="Standard.Class" uid="50ffb098-eb8e-4f80-999f-1dee2c0e5e39"/>
+        <COMPID name="RefreshTokenService" mc="Standard.Class" uid="a6ecf82f-600e-49de-8eef-4cdf2f3437be"/>
+        <COMPID name="JwtTokenService" mc="Standard.Class" uid="beb5c59b-e455-4494-a38e-a9a3c020402a"/>
+        <COMPID name="JwtMiddleware" mc="Standard.Class" uid="e7dcfbea-8644-443f-abca-9bd26aab2273"/>
+        <COMPID name="RefreshToken" mc="Standard.Class" uid="3422b23c-5076-4b06-9554-8176204fedfd"/>
+        <COMPID name="Role" mc="Standard.Class" uid="bf3dc78a-3a22-4e67-8459-e7a0345d8c94"/>
+        <COMPID name="User" mc="Standard.Class" uid="6b8bef10-68d9-43b7-a4c5-3384813fd85b"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Class diagram" mc="Standard.ClassDiagram" uid="3a029efe-40c4-49a9-a8fe-5311d216d201"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
