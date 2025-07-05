@@ -10,7 +10,7 @@ class UserController {
       Error.printError(req, res, Error.status.SC_BAD_REQUEST, 'accountNonLocked must be null or true or not provided.');
       return;
     }
-    if (!username || !password || !enabled) {
+    if (!username || !password || (enabled === undefined || enabled === null)) {
       Error.printError(req, res, Error.status.SC_BAD_REQUEST, 'username or password or enable is null.');
       return;
     }
